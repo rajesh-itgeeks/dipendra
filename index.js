@@ -28,6 +28,6 @@ app.delete('/user/:id', validations.paramId, controllers.deleteUser);
 app.get('/user', validations.usersList, controllers.getList);
 
 
-app.listen(3032, () => {
+app.listen(process.env.PORT, () => {
   console.log("Listening port 3032")
 })
