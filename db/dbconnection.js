@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
 //const Store = require('../model/userModel')
 //const Title = require('../model/productModel')
-const sequelize = new Sequelize(POSTGRES_DATABASE, POSTGRES_USER, POSTGRES_PASSWORD, {
-  host: POSTGRES_HOST,
+const sequelize = new Sequelize(process.env.POSTGRES_DATABASE, process.env.POSTGRES_USER, process.env.POSTGRES_PASSWORD, {
+  host: process.env.POSTGRES_HOST,
   dialect: 'postgres'
 });
 
